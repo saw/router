@@ -5,12 +5,17 @@ var win;
 
 function listen() {
 	win.addEventListener('popstate', function(e) {
-		
+		console.log('event', e);
 	});
 }
 
+function get(url, callback) {
+
+}
+
 var router = {
-	listen: listen
+	listen: listen,
+	get: get
 };
 
 //inject the window

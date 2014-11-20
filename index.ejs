@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ok</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	window.addEventListener('popstate', function(e) {
+		console.log('popstate');
+	
+	});
+	window.setTimeout(function() {
+		window.history.pushState(null, '', 'hello');
+	}, 1000);
+</script>
+</body>
+
+</html>
